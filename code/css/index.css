@@ -1,0 +1,208 @@
+:root{
+    --mainColor : rgb(102, 167, 198);
+    --bg-color : #06032bc2;
+}
+h1{
+    background-color: aliceblue;
+    margin-bottom: 0 !important;
+    padding: 20px;
+}
+/* Start header */
+.layout{
+    width: 80%;
+}
+.navbar{
+    background-color: var(--mainColor);
+}
+.btn:hover{
+    background-color: var(--mainColor) !important;
+}
+.navbar-brand img{
+    width: 35px !important;
+    height: 35px !important;
+}
+.dropdownlist ul , .dropdownlist-sm ul{
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    margin-left: 0;
+    z-index: 2;
+}
+.dropdownlist ul li , .dropdownlist-sm ul li{
+    width: 200px;
+    padding: 10px;
+    text-align: center;
+    background-color: var(--mainColor);
+    border-bottom: 2px solid #eee;
+}
+.dropdownlist ul li a , .dropdownlist-sm ul a{
+    color: black ;
+}
+.im{
+    width: 100%;
+    height: calc(100vh - 62px);
+    background-color: var(--bg-color);
+    font-size: 150px;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bolder;
+}
+@media (max-width:991px){
+    .im{
+        font-size: 50px;
+    }
+    .layout{
+        margin-left: 2px !important;
+        margin-right: 2px !important;
+        width: 100%;
+    }
+    .navbar{
+        position: relative;
+    }
+    .dropdownlist-sm ul{
+        top: 100%;
+        left: 0;
+        transform: translateX(0);
+    }
+    .dropdownlist-sm ul li{
+        width: 100vw;
+    }
+}
+/* End Header */
+ /* Start Team Achievements */
+ #container{
+    width: 100%;
+ }
+ #teamachieve{
+    background-color: var(--bg-color);
+    padding: 15px;
+    min-height:calc(100vh - 60px) ;
+ }
+#teamachieve div{
+    border-radius: 10px;
+    flex-basis: 300px;
+    background-color: var(--mainColor);
+    padding: 20px;
+    height: fit-content;
+    color: white;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    margin-left: 4px;
+    margin-bottom: 5px;
+}
+#teamachieve div img{
+    width: 100%;
+    height: 100px;
+}
+#teamachieve div h3{
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid white;
+}
+#container #window{
+    width: 50%;
+    max-height: 500px;
+    padding: 20px;
+    background-color: rebeccapurple;
+    border: 3px solid white;
+    box-shadow: yellow;
+    color: white;
+    margin-top: 30px;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-55%);
+}
+#container #window img{
+    width: 100%;
+    height: 200px;
+}
+#container #window button{
+    position: absolute;
+    width: 50px;
+    top: 0;
+    background-color: red;
+    left: 100%;
+    transform: translateX(-100%);
+}
+@media(min-width:993px){
+    #teamachieve div::before{
+        opacity: 0.8;
+        content: "Read More";
+        font-weight: bolder;
+        font-size: larger;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        background-color: rgb(0, 0, 0);
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        transform: translate(-100%, 0);
+        transition: 0.3s;
+    }
+    #teamachieve div:hover::before{
+        transform: translate(0,0);
+    }
+}
+@media (max-width: 992px){
+    #teamachieve div{
+        max-width: 500px;
+        min-width: 150px;
+    }
+    #teamachieve{
+        flex-wrap: wrap;
+        justify-content: center;
+        overflow: visible;
+    }
+    .close{
+        background-color: var(--mainColor);
+        margin-top: -5px;
+    }
+}
+/* End Team Achievements */
+/* Start Upcoming */
+#upcomingev{
+    background-color: var(--bg-color);
+    width: 100%;
+    padding: 20px;
+    transform: translate(4px,4px);
+}
+#upcomingev div{
+    transition: 0.5s;
+    min-width: 275px;
+}
+#upcomingev div:hover{
+    transform: translate(3px,3px);
+}
+#upcomingev div div{
+    background-color: var(--mainColor);
+}
+/* End Upcoming */
+/* Start Highlights */
+#highlights{
+    width: 80%;
+    height: 45vh;
+}
+#highlights img{
+width: 100px;
+height: 100px;
+}
+/* End Highlights */
+/* Start Contact */
+#contact{
+    background-color: var(--mainColor);
+    padding: 50px;
+    height: 45vh;
+    overflow: hidden;
+    width: 100wv;
+}
+@media(max-width: 992px){
+    #contact{
+        padding: 10px;
+    }
+}
+/* End Contact */

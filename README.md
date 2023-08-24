@@ -75,7 +75,7 @@ Include screenshots of different sections of your homepage here.
 
 ## Author
 
-[Your Name]
+Nour-Eldin Mohamed Abo-Elghet
 
 ---
 
